@@ -1,0 +1,19 @@
+{
+  "name": "astrastreaming",
+  "version": "1.0.0",
+  "description": "astra streaming example with node.js",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^16.3.0",
+    "nodemon": "^2.0.7",
+    "pulsar-client": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rachan",
+  "license": "ISC"
+}
