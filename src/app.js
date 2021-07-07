@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express()
- 
-app.get('/', function (req, res) {
-  console.log('Port is up and running!')
-})
- 
-app.listen(3000)
+const path = require('path')
+
+const publicDirectoryPath = path.join(__dirname, '../public')
+app.use(express.static(publicDirectoryPath))
+
 
 module.exports= app

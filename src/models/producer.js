@@ -8,15 +8,16 @@ const sendMessage = (async(message)=>{
   // Send messages
   
     producer.send({
-      data: Buffer.from("nodejs-message-" + message),
+      data: Buffer.from("nodejs-message-" + message)
     })
     console.log("send message " + message);
   
   await producer.flush()
-  await producer.close()
+  //await producer.close()
   //await client.close()
 })
 
-module.exports = { sendMessage }
+module.exports = {
+  sendMessage }
 
 
