@@ -19,7 +19,7 @@ const consumeMessage = (async()=>{
     consumer.acknowledge(msg);
   }
   await consumer.close();
-  //await client.close();
+  await client.close();
 })
 
 module.exports = { consumeMessage }

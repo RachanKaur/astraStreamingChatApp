@@ -5,6 +5,7 @@ const { consumeMessage } = require('./models/consumer')
 
 const socketio = require('socket.io')
 const http = require('http')
+const { randomInt } = require('crypto')
 const server = http.createServer(app)
 const io = socketio(server)
 const port = 3000
@@ -15,6 +16,12 @@ const generateMessage = (text) => {
         createdAt: new Date().getTime()
     }
 }
+
+// const generateUser = (text) => {
+//     return {
+//         text
+//     }
+// }
 
 io.on('connection', (socket) => {
     console.log('New Websocket connection.')

@@ -30,7 +30,9 @@ label {
     margin-bottom: 8px;
     color: #777;
 }
-
+p {
+    color: black;
+}
 input {
     border: 1px solid #eeeeee;
     padding: 12px;
@@ -61,6 +63,9 @@ button:disabled {
     color: #eeeeee;
     background-color: #EB6C34;
     height: 50px;
+}
+.top-bar button{
+    background-color: black;
 }
 .logoutLblPos{
 
